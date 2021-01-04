@@ -47,7 +47,7 @@ public class UserServiceImpl implements UserService {
                 .email(userDto.getEmail())
                 .role(Role.CLIENT)
                 .build();
-        userRepository.save(user);
+        this.save(user);
         return true;
     }
 
